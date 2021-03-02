@@ -11,7 +11,9 @@ repositories {
     mavenCentral()
 }
 
-
+dependencies {
+    implementation("org.eclipse.jgit:org.eclipse.jgit:5.10.0.202012080955-r")
+}
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
